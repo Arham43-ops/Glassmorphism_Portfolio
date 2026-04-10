@@ -30,6 +30,7 @@
             <a href="#workflow">Workflow</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Work</a>
+            <a href="#calculator">Calculator</a>
         </div>
         <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Let's Talk</a>
     </nav>
@@ -353,6 +354,213 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="calculator">
+        <h2 class="section-title">Services Pricing Calculator</h2>
+        <div class="calculator-wrapper">
+            <div class="calculator-form-container glass-panel">
+                <form id="calculatorForm" class="calculator-form" method="POST" action="https://formspree.io/f/xpwqaqrp">
+                    
+                    <div class="calc-layout">
+                        <!-- LEFT COLUMN -->
+                        <div class="calc-left">
+                            <!-- SERVICE SECTION -->
+                            <div class="calc-card">
+                                <div class="calc-card-header">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <h3>Service Type</h3>
+                                </div>
+                                <div class="service-grid">
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="business-website" data-price="0" data-label="Business Site">
+                                        <span>Business Site<br><small>Select Pages</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="portfolio-website" data-price="2000" data-label="Portfolio">
+                                        <span>Portfolio<br><small>₹2,000</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="3d landing-page" data-price="750" data-label="3D Landing Page">
+                                        <span>3d Landing page<br><small>₹750</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="software-app" data-price="15000" data-label="Software App">
+                                        <span>Software<br><small>₹15,000</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="seo-optimization" data-price="4000" data-label="SEO Optimization">
+                                        <span>SEO<br><small>₹4,000</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="tech-consultation" data-price="2000" data-label="Tech Consultation">
+                                        <span>Consultation<br><small>₹2,000</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="Graphic Design" data-price="3000" data-label="Graphic Design">
+                                        <span>Graphic Design<br><small>₹~3,000</small></span>
+                                    </label>
+                                    <label class="service-btn">
+                                        <input type="checkbox" name="serviceType" value="Web Deployment" data-price="1000" data-label="Web Deployment">
+                                        <span>Web Deployment<br><small>₹1,000</small></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- PAGES SECTION -->
+                            <div class="calc-card">
+                                <div class="calc-card-header">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <h3>Website Pages</h3>
+                                </div>
+                                <div class="pages-grid">
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="index" data-price="1500"><span>Home <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="about" data-price="1500"><span>About <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="services" data-price="1500"><span>Services <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="portfolio" data-price="1500"><span>Portfolio <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="blog" data-price="1500"><span>Blog <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="contact" data-price="1500"><span>Contact <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="faq" data-price="1500"><span>FAQ <small>(₹1500)</small></span></label>
+                                    <label class="page-btn"><input type="checkbox" name="pages" value="testimonials" data-price="1500"><span>Testimonials <small>(₹1500)</small></span></label>
+                                </div>
+                                <p class="count-display">Pages: <strong id="pageCount">3</strong> | Extra: <strong id="extraPageCount">0</strong> × ₹350</p>
+                            </div>
+                        </div>
+
+                        <!-- MIDDLE COLUMN -->
+                        <div class="calc-middle">
+                            <!-- ADD-ONS SECTION -->
+                            <div class="calc-card">
+                                <div class="calc-card-header">
+                                    <i class="fa-solid fa-plus-circle"></i>
+                                    <h3>Add-ons</h3>
+                                </div>
+                                <div class="addons-grid">
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="ecommerce" data-price="8000">
+                                        <span>E-Commerce<br><small>+₹8k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="blog" data-price="5000">
+                                        <span>Blog<br><small>+₹5k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="analytics" data-price="3000">
+                                        <span>Analytics<br><small>+₹3k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="contact-form" data-price="2000">
+                                        <span>Contact Form<br><small>+₹2k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="api-integration" data-price="6000">
+                                        <span>API<br><small>+₹6k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="payment-gateway" data-price="5000">
+                                        <span>Payment<br><small>+₹5k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="sms-service" data-price="4000">
+                                        <span>SMS<br><small>+₹4k</small></span>
+                                    </label>
+                                    <label class="addon-btn">
+                                        <input type="checkbox" name="addons" value="user-auth" data-price="3500">
+                                        <span>Authentication<br><small>+₹3.5k</small></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- THEMES SECTION -->
+                            <div class="calc-card">
+                                <div class="calc-card-header">
+                                    <i class="fa-solid fa-palette"></i>
+                                    <h3>Design Themes</h3>
+                                </div>
+                                <div class="themes-grid">
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="glassmorphism" data-price="3000">
+                                        <span>Glassmorphism<br><small>+₹3k</small></span>
+                                    </label>
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="3d-interactivity" data-price="5000">
+                                        <span>3D Interactive<br><small>+₹5k</small></span>
+                                    </label>
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="neobrutalism" data-price="4000">
+                                        <span>Neobrutalism<br><small>+₹4k</small></span>
+                                    </label>
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="minimalist" data-price="2000">
+                                        <span>Minimalist<br><small>+₹2k</small></span>
+                                    </label>
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="professional" data-price="2500">
+                                        <span>Professional<br><small>+₹2.5k</small></span>
+                                    </label>
+                                    <label class="theme-btn">
+                                        <input type="checkbox" name="themes" value="simple" data-price="1500">
+                                        <span>Simple<br><small>+₹1.5k</small></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: PRICING PANEL -->
+                        <div class="calc-right">
+                            <div class="pricing-panel glass-panel">
+                                <div class="quote-header">
+                                    <i class="fa-solid fa-calculator"></i>
+                                    <h3>Quote Summary</h3>
+                                </div>
+
+                                <div id="selectedServicesDisplay" style="margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(0,240,255,0.2);">
+                                    <p style="font-size: 0.85rem; color: #00f0ff; margin-bottom: 0.5rem; margin-top: 0;">Selected Services:</p>
+                                    <div id="servicesList" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
+                                </div>
+
+                                <div class="pricing-breakdown">
+                                    <div class="price-line">
+                                        <span class="label">Services:</span>
+                                        <span class="value" id="basePriceDisplay">₹0</span>
+                                    </div>
+                                    <div class="price-line">
+                                        <span class="label">Extra Pages:</span>
+                                        <span class="value" id="pagesPriceDisplay">₹0</span>
+                                    </div>
+                                    <div class="price-line">
+                                        <span class="label">Add-ons:</span>
+                                        <span class="value" id="addonsPriceDisplay">₹0</span>
+                                    </div>
+                                    <div class="price-line">
+                                        <span class="label">Themes:</span>
+                                        <span class="value" id="themesPriceDisplay">₹0</span>
+                                    </div>
+                                </div>
+
+                                <div class="price-total">
+                                    <span>TOTAL PRICE</span>
+                                    <span id="totalPriceDisplay">₹0</span>
+                                </div>
+
+                                <div class="email-section">
+                                    <label style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 0.6rem;">Your Email *</label>
+                                    <input type="email" id="clientEmail" name="email" required placeholder="your@email.com" class="email-input">
+                                </div>
+
+                                <button type="submit" class="btn-send-quote">
+                                    <i class="fa-solid fa-paper-plane"></i> Send Quote
+                                </button>
+
+                                <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">
+                                    <i class="fa-solid fa-circle-info" style="color: var(--aurora-2);"></i> We'll contact you within 24 hours
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
